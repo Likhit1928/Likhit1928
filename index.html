@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="mr-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="स्वामी क्लासेस - फैजपूरमधील गुणवत्तापूर्ण शिकवणी केंद्र. वाचन, लेखन आणि इंग्रजी शिक्षणासाठी विश्वासार्ह मार्गदर्शन.">
+    <meta name="keywords" content="स्वामी क्लासेस, फैजपूर शिकवणी, इंग्रजी शिक्षण, वाचन लेखन वर्ग, नर्सरी ते सहावी शिक्षण">
+    <meta name="author" content="Swami Classes">
+    <title>स्वामी क्लासेस - फैजपूर | गुणवत्तापूर्ण शिक्षण</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #ff7e5f;
+            --accent-color: #f9c74f;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --success-color: #28a745;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .marathi-font {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(74, 111, 165, 0.8), rgba(74, 111, 165, 0.9)), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .course-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a5a8f;
+            border-color: #3a5a8f;
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: var(--dark-color);
+        }
+        
+        .btn-accent:hover {
+            background-color: #e6b63d;
+            border-color: #e6b63d;
+            color: var(--dark-color);
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+        
+        .highlight-box {
+            background-color: rgba(249, 199, 79, 0.2);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .call-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .call-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .display-4 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand marathi-font" href="#">स्वामी क्लासेस</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link marathi-font" href="#about">आमच्याबद्दल</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link marathi-font" href="#features">वैशिष्ट्ये</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link marathi-font" href="#courses">कोर्सेस</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link marathi-font" href="#contact">संपर्क</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 marathi-font">स्वामी क्लासेस</h1>
+            <p class="lead mb-4 marathi-font">🔸 वाचायला आणि लिहायला शिका<br>🔸 तुमच्या मुलांसाठी गुणवत्तापूर्ण शिक्षणाचा विश्वास!</p>
+            <a href="#contact" class="btn btn-accent btn-lg px-4 marathi-font">आजच संपर्क करा</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 marathi-font">आमच्याबद्दल</h2>
+                    <p class="lead marathi-font">स्वामी क्लासेस हे फैजपूरमधील विश्वासार्ह आणि गुणवत्तापूर्ण शिकवणी केंद्र आहे.</p>
+                    <p class="marathi-font">आमचा उद्देश विद्यार्थ्यांना लहान वयापासूनच वाचन, लेखन आणि इंग्रजीतील आत्मविश्वास निर्माण करून देणे आहे.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                         alt="Swami Classes Classroom" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 marathi-font">आम्हालाच का निवडाल?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 class="marathi-font">अनुभवी शिक्षक</h4>
+                        <p class="marathi-font">प्रशिक्षित आणि प्रेमळ शिक्षकांकडून मार्गदर्शन</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4 class="marathi-font">मूलभूत शिक्षण</h4>
+                        <p class="marathi-font">वाचन, लेखन आणि गणिताच्या पायावर भर</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4 class="marathi-font">वैयक्तिक लक्ष</h4>
+                        <p class="marathi-font">प्रत्येक विद्यार्थ्याकडे वैयक्तिक लक्ष</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4 class="marathi-font">गुणवत्ता</h4>
+                        <p class="marathi-font">गुणवत्तापूर्ण आणि नैतिक शिक्षण</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4 class="marathi-font">इंग्रजी तयारी</h4>
+                        <p class="marathi-font">इंग्रजी बोलण्याची आणि लिहिण्याची विशेष तयारी</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4 class="marathi-font">उपक्रम</h4>
+                        <p class="marathi-font">अभ्यासक्रमासोबत इतर उपक्रम</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 marathi-font">आमचे कोर्सेस</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="course-card card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title marathi-font">रिमेडीयल क्लासेस</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item marathi-font"><strong>इयत्ता:</strong> नर्सरी ते सहावी</li>
+                                <li class="list-group-item marathi-font"><strong>विषय:</strong> सर्व विषय</li>
+                                <li class="list-group-item marathi-font"><strong>वेळ:</strong> दुपारी ३ ते ४</li>
+                                <li class="list-group-item marathi-font"><strong>संपर्क:</strong> निता चौधरी – 9665435544</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="course-card card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title marathi-font">इंग्रजी व्याकरण व संभाषण</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item marathi-font"><strong>इयत्ता:</strong> ५वी ते १०वी</li>
+                                <li class="list-group-item marathi-font"><strong>विषय:</strong> व्याकरण, वाचन, लेखन, संभाषण</li>
+                                <li class="list-group-item marathi-font"><strong>वेळ:</strong> दुपारी ४ ते ५</li>
+                                <li class="list-group-item marathi-font"><strong>संपर्क:</strong> चारुशिला बोरोले – 8208347351</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box mt-5">
+                <h3 class="marathi-font">शैक्षणिक वर्षाची सुरुवात</h3>
+                <p class="marathi-font"><strong>दिनांक:</strong> १६ जून पासून</p>
+                <p class="marathi-font"><strong>लवकर नोंदणी करा!</strong> मर्यादित जागा उपलब्ध आहेत.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 marathi-font">संपर्क साधा</h2>
+                    <div class="contact-info mb-4">
+                        <h4 class="marathi-font">पत्ता</h4>
+                        <p class="marathi-font">
+                            <a href="https://maps.app.goo.gl/i45baEgDrdMZoZ8f7" target="_blank" class="d-inline-flex align-items-center">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                स्टेट बँकेच्या मागे, फैजपूर
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contact-info mb-4">
+                        <h4 class="marathi-font">फोन नंबर</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="call-box">
+                                    <h5 class="marathi-font">निता चौधरी</h5>
+                                    <a href="tel:+919665435544" class="btn btn-primary w-100 marathi-font">
+                                        <i class="fas fa-phone me-1"></i> 9665435544
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="call-box">
+                                    <h5 class="marathi-font">चारुशिला बोरोले</h5>
+                                    <a href="tel:+918208347351" class="btn btn-primary w-100 marathi-font">
+                                        <i class="fas fa-phone me-1"></i> 8208347351
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <h4 class="marathi-font">वेळ</h4>
+                        <p class="marathi-font"><i class="fas fa-clock me-2"></i> सकाळी १० ते सायंकाळी ६</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h3 class="mb-4 marathi-font">नोंदणीसाठी अर्ज करा</h3>
+                        <p class="lead marathi-font">तुमच्या मुलाला उज्ज्वल भविष्यासाठी योग्य सुरुवात द्या</p>
+                        <p class="marathi-font">आजच संपर्क करा आणि जागा आरक्षित करा!</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+                                <a href="tel:+919665435544" class="btn btn-primary w-100 btn-lg marathi-font">
+                                    <i class="fas fa-phone me-1"></i> निता चौधरी
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="tel:+918208347351" class="btn btn-primary w-100 btn-lg marathi-font">
+                                    <i class="fas fa-phone me-1"></i> चारुशिला बोरोले
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="https://wa.me/919665435544" class="btn btn-success w-100 btn-lg marathi-font">
+                                    <i class="fab fa-whatsapp me-1"></i> WhatsApp (निता)
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="https://wa.me/918208347351" class="btn btn-success w-100 btn-lg marathi-font">
+                                    <i class="fab fa-whatsapp me-1"></i> WhatsApp (चारुशिला)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h3 class="marathi-font">स्वामी क्लासेस</h3>
+                    <p class="marathi-font">शिक्षण हेच खरं सामर्थ्य!</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="marathi-font">© 2025 स्वामी क्लासेस | फैजपूर</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "स्वामी क्लासेस",
+      "description": "फैजपूरमधील गुणवत्तापूर्ण शिकवणी केंद्र. वाचन, लेखन आणि इंग्रजी शिक्षणासाठी विश्वासार्ह मार्गदर्शन.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "स्टेट बँकेच्या मागे",
+        "addressLocality": "फैजपूर",
+        "addressRegion": "महाराष्ट्र",
+        "addressCountry": "IN"
+      },
+      "telephone": "+919665435544",
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa 10:00-18:00"
+    }
+    </script>
+</body>
+</html>
